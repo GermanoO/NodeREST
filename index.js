@@ -2,8 +2,10 @@
 let express = require('express');
 let consign = require('consign');
 //const PORT = 3000;
+bodyParser = require('body-parser');
 
 const app = express();
+app.use(bodyParser.json());
 
 
 //app.get("/", (req, res) => res.json({status: "NTask API"}));
